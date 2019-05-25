@@ -1,6 +1,7 @@
 *** Settings ***
 Resource    ../lib/lib.robot
 
+Suite Setup    Open Web Startup
 Suite Teardown    Close Browser
 
 
@@ -11,7 +12,6 @@ ${investorEmail}   tiktoc.kannikar@gmail.com
 
 *** Test cases ***
 Check Login Popup 
-    Open Startup
     Click link    btnLogin
     Should Show Startup Login Information 
     Should Show Investor Login Information

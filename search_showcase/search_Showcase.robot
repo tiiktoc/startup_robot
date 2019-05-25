@@ -1,7 +1,7 @@
 *** Settings ***
 Resource    ../lib/lib.robot
 
-Suite Setup    Open Startup
+Suite Setup    Open Web Startup
 
 Suite Teardown    Close Browser
 
