@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20190525 17:30:01.364" generator="Robot 3.1.1 (Python 2.7.13 on win32)">
+<suite source="C:\Users\Kannika\robot-demo\login" id="s1" name="Login">
+<suite source="C:\Users\Kannika\robot-demo\login\Login.robot" id="s1-s1" name="Login">
+<test id="s1-s1-t1" name="Check Login Popup">
+<kw name="Open Startup" library="lib">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>https://startup.odds.team/showcase</arg>
+<arg>Chrome</arg>
+</arguments>
+<msg timestamp="20190525 17:30:01.878" level="INFO">Opening browser 'Chrome' to base url 'https://startup.odds.team/showcase'.</msg>
+<status status="PASS" endtime="20190525 17:30:20.949" starttime="20190525 17:30:01.878"></status>
+</kw>
+<kw name="Set Window Size" library="Selenium2Library">
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<arguments>
+<arg>1280</arg>
+<arg>1024</arg>
+</arguments>
+<status status="PASS" endtime="20190525 17:30:22.094" starttime="20190525 17:30:20.949"></status>
+</kw>
+<status status="PASS" endtime="20190525 17:30:22.095" starttime="20190525 17:30:01.877"></status>
+</kw>
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>btnLogin</arg>
+</arguments>
+<msg timestamp="20190525 17:30:22.096" level="INFO">Clicking link 'btnLogin'.</msg>
+<status status="PASS" endtime="20190525 17:30:22.205" starttime="20190525 17:30:22.096"></status>
+</kw>
+<kw name="Should Show Startup Login Information">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>Login Startup</arg>
+</arguments>
+<status status="PASS" endtime="20190525 17:30:22.226" starttime="20190525 17:30:22.206"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Login Startup</arg>
+</arguments>
+<msg timestamp="20190525 17:30:22.243" level="INFO">Current page contains text 'Login Startup'.</msg>
+<status status="PASS" endtime="20190525 17:30:22.244" starttime="20190525 17:30:22.227"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>E-mail</arg>
+</arguments>
+<msg timestamp="20190525 17:30:22.272" level="INFO">Current page contains text 'E-mail'.</msg>
+<status status="PASS" endtime="20190525 17:30:22.273" starttime="20190525 17:30:22.244"></status>
+</kw>
+<kw name="Page Should Contain Textfield" library="Selenium2Library">
+<doc>Verifies text field ``locator`` is found from current page.</doc>
+<arguments>
+<arg>startupEmail</arg>
+</arguments>
+<msg timestamp="20190525 17:30:22.298" level="INFO">Current page contains text field 'startupEmail'.</msg>
+<status status="PASS" endtime="20190525 17:30:22.298" starttime="20190525 17:30:22.273"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Password</arg>
+</arguments>
+<msg timestamp="20190525 17:30:22.326" level="INFO">Current page contains text 'Password'.</msg>
+<status status="PASS" endtime="20190525 17:30:22.326" starttime="20190525 17:30:22.298"></status>
+</kw>
+<kw name="Page Should Contain Textfield" library="Selenium2Library">
+<doc>Verifies text field ``locator`` is found from current page.</doc>
+<arguments>
+<arg>startupPassword</arg>
+</arguments>
+<msg timestamp="20190525 17:30:22.347" level="INFO">Current page contains text field 'startupPassword'.</msg>
+<status status="PASS" endtime="20190525 17:30:22.347" starttime="20190525 17:30:22.326"></status>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>btnLoginStartup</arg>
+</arguments>
+<msg timestamp="20190525 17:30:22.363" level="INFO">Current page contains element 'btnLoginStartup'.</msg>
+<status status="PASS" endtime="20190525 17:30:22.363" starttime="20190525 17:30:22.347"></status>
+</kw>
+<status status="PASS" endtime="20190525 17:30:22.363" starttime="20190525 17:30:22.206"></status>
+</kw>
+<kw name="Should Show Investor Login Information">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>Login Investor</arg>
+</arguments>
+<status status="PASS" endtime="20190525 17:30:22.385" starttime="20190525 17:30:22.364"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Login Investor</arg>
+</arguments>
+<msg timestamp="20190525 17:30:22.406" level="INFO">Current page contains text 'Login Investor'.</msg>
+<status status="PASS" endtime="20190525 17:30:22.407" starttime="20190525 17:30:22.385"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>E-mail</arg>
+</arguments>
+<msg timestamp="20190525 17:30:22.426" level="INFO">Current page contains text 'E-mail'.</msg>
+<status status="PASS" endtime="20190525 17:30:22.426" starttime="20190525 17:30:22.408"></status>
+</kw>
+<kw name="Page Should Contain Textfield" library="Selenium2Library">
+<doc>Verifies text field ``locator`` is found from current page.</doc>
+<arguments>
+<arg>investorEmail</arg>
+</arguments>
+<msg timestamp="20190525 17:30:22.451" level="INFO">Current page contains text field 'investorEmail'.</msg>
+<status status="PASS" endtime="20190525 17:30:22.452" starttime="20190525 17:30:22.426"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Password</arg>
+</arguments>
+<msg timestamp="20190525 17:30:22.468" level="INFO">Current page contains text 'Password'.</msg>
+<status status="PASS" endtime="20190525 17:30:22.468" starttime="20190525 17:30:22.452"></status>
+</kw>
+<kw name="Page Should Contain Textfield" library="Selenium2Library">
+<doc>Verifies text field ``locator`` is found from current page.</doc>
+<arguments>
+<arg>investorPassword</arg>
+</arguments>
+<msg timestamp="20190525 17:30:22.491" level="INFO">Current page contains text field 'investorPassword'.</msg>
+<status status="PASS" endtime="20190525 17:30:22.491" starttime="20190525 17:30:22.468"></status>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>btnLoginInvestor</arg>
+</arguments>
+<msg timestamp="20190525 17:30:22.506" level="INFO">Current page contains element 'btnLoginInvestor'.</msg>
+<status status="PASS" endtime="20190525 17:30:22.506" starttime="20190525 17:30:22.491"></status>
+</kw>
+<status status="PASS" endtime="20190525 17:30:22.506" starttime="20190525 17:30:22.364"></status>
+</kw>
+<status status="PASS" endtime="20190525 17:30:22.507" critical="yes" starttime="20190525 17:30:01.876"></status>
+</test>
+<test id="s1-s1-t2" name="Login Investor with Invalid Password">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>investorEmail</arg>
+<arg>${investorEmail}</arg>
+</arguments>
+<msg timestamp="20190525 17:30:22.510" level="INFO">Typing text 'tiktoc.kannikar@gmail.com' into text field 'investorEmail'.</msg>
+<status status="PASS" endtime="20190525 17:30:22.725" starttime="20190525 17:30:22.510"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>investorPassword</arg>
+<arg>Tik11</arg>
+</arguments>
+<msg timestamp="20190525 17:30:22.726" level="INFO">Typing text 'Tik11' into text field 'investorPassword'.</msg>
+<status status="PASS" endtime="20190525 17:30:22.849" starttime="20190525 17:30:22.726"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>btnLoginInvestor</arg>
+</arguments>
+<msg timestamp="20190525 17:30:22.850" level="INFO">Clicking button 'btnLoginInvestor'.</msg>
+<status status="PASS" endtime="20190525 17:30:22.955" starttime="20190525 17:30:22.850"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>invalid username of password</arg>
+</arguments>
+<status status="PASS" endtime="20190525 17:30:23.648" starttime="20190525 17:30:22.956"></status>
+</kw>
+<status status="PASS" endtime="20190525 17:30:23.649" critical="yes" starttime="20190525 17:30:22.509"></status>
+</test>
+<test id="s1-s1-t3" name="Login Investor">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>investorEmail</arg>
+<arg>${investorEmail}</arg>
+</arguments>
+<msg timestamp="20190525 17:30:23.652" level="INFO">Typing text 'tiktoc.kannikar@gmail.com' into text field 'investorEmail'.</msg>
+<status status="PASS" endtime="20190525 17:30:24.469" starttime="20190525 17:30:23.652"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>investorPassword</arg>
+<arg>tik</arg>
+</arguments>
+<msg timestamp="20190525 17:30:24.470" level="INFO">Typing text 'tik' into text field 'investorPassword'.</msg>
+<status status="PASS" endtime="20190525 17:30:24.564" starttime="20190525 17:30:24.470"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>btnLoginInvestor</arg>
+</arguments>
+<msg timestamp="20190525 17:30:24.566" level="INFO">Clicking button 'btnLoginInvestor'.</msg>
+<status status="PASS" endtime="20190525 17:30:24.646" starttime="20190525 17:30:24.565"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>tiktoc.kannikar</arg>
+</arguments>
+<status status="PASS" endtime="20190525 17:30:25.102" starttime="20190525 17:30:24.647"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>linkLogout</arg>
+</arguments>
+<msg timestamp="20190525 17:30:25.103" level="INFO">Clicking element 'linkLogout'.</msg>
+<status status="PASS" endtime="20190525 17:30:25.197" starttime="20190525 17:30:25.103"></status>
+</kw>
+<status status="PASS" endtime="20190525 17:30:25.198" critical="yes" starttime="20190525 17:30:23.651"></status>
+</test>
+<test id="s1-s1-t4" name="Login Startup with Invalid Password">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>Login</arg>
+</arguments>
+<status status="PASS" endtime="20190525 17:30:25.850" starttime="20190525 17:30:25.201"></status>
+</kw>
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>btnLogin</arg>
+</arguments>
+<msg timestamp="20190525 17:30:25.851" level="INFO">Clicking link 'btnLogin'.</msg>
+<status status="PASS" endtime="20190525 17:30:26.269" starttime="20190525 17:30:25.851"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>startupEmail</arg>
+<arg>${investorEmail}</arg>
+</arguments>
+<msg timestamp="20190525 17:30:26.270" level="INFO">Typing text 'tiktoc.kannikar@gmail.com' into text field 'startupEmail'.</msg>
+<status status="PASS" endtime="20190525 17:30:26.928" starttime="20190525 17:30:26.270"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>startupPassword</arg>
+<arg>ttt011</arg>
+</arguments>
+<msg timestamp="20190525 17:30:26.929" level="INFO">Typing text 'ttt011' into text field 'startupPassword'.</msg>
+<status status="PASS" endtime="20190525 17:30:27.071" starttime="20190525 17:30:26.929"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>btnLoginStartup</arg>
+</arguments>
+<msg timestamp="20190525 17:30:27.072" level="INFO">Clicking button 'btnLoginStartup'.</msg>
+<status status="PASS" endtime="20190525 17:30:27.188" starttime="20190525 17:30:27.071"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>invalid username or password</arg>
+</arguments>
+<status status="PASS" endtime="20190525 17:30:27.428" starttime="20190525 17:30:27.189"></status>
+</kw>
+<status status="PASS" endtime="20190525 17:30:27.429" critical="yes" starttime="20190525 17:30:25.200"></status>
+</test>
+<test id="s1-s1-t5" name="Login Startup">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>startupEmail</arg>
+<arg>${investorEmail}</arg>
+</arguments>
+<msg timestamp="20190525 17:30:27.433" level="INFO">Typing text 'tiktoc.kannikar@gmail.com' into text field 'startupEmail'.</msg>
+<status status="PASS" endtime="20190525 17:30:27.662" starttime="20190525 17:30:27.432"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>startupPassword</arg>
+<arg>tik11</arg>
+</arguments>
+<msg timestamp="20190525 17:30:27.663" level="INFO">Typing text 'tik11' into text field 'startupPassword'.</msg>
+<status status="PASS" endtime="20190525 17:30:27.766" starttime="20190525 17:30:27.663"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>btnLoginStartup</arg>
+</arguments>
+<msg timestamp="20190525 17:30:27.767" level="INFO">Clicking button 'btnLoginStartup'.</msg>
+<status status="PASS" endtime="20190525 17:30:27.851" starttime="20190525 17:30:27.766"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>tiktoc.kannikar</arg>
+</arguments>
+<status status="PASS" endtime="20190525 17:30:28.295" starttime="20190525 17:30:27.851"></status>
+</kw>
+<status status="PASS" endtime="20190525 17:30:28.296" critical="yes" starttime="20190525 17:30:27.431"></status>
+</test>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20190525 17:30:30.582" starttime="20190525 17:30:28.299"></status>
+</kw>
+<status status="PASS" endtime="20190525 17:30:30.582" starttime="20190525 17:30:01.402"></status>
+</suite>
+<status status="PASS" endtime="20190525 17:30:30.588" starttime="20190525 17:30:01.368"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="5">Critical Tests</stat>
+<stat fail="0" pass="5">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Login" pass="5">Login</stat>
+<stat fail="0" id="s1-s1" name="Login" pass="5">Login.Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
